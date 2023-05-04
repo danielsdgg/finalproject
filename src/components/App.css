@@ -1,0 +1,246 @@
+
+img{
+  height: 500px;
+  width: 500px;
+}
+
+header{
+  text-align: center;
+  background-color:#222;
+  font-size: 80px;
+  color: #fff;
+}
+
+footer{
+    text-align: center;
+    background-color: #222;
+    font-size: 50px;
+    color: #fff;
+}
+
+.search{
+  float: right;
+}
+
+/* Styles for animal cards */
+.animal-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+  background-color: #222;
+  color: #fff;
+  
+}
+
+
+.animal-card img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.animal-card h2 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.animal-card p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+/* Styles for grid layout */
+.animal-grid {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+@media (min-width: 768px) {
+  .animal-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.animal-form {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+}
+
+.animal-form h5 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.animal-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.animal-form input[type="text"],
+.animal-form input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.animal-form button[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.animal-form button[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+.animal-container{
+  display: grid;
+  grid-template-rows: repeat(auto, 240px);
+  grid-template-columns: repeat(5, 240px);
+  gap:1% 1%;  
+  padding: 2%;
+}
+.filter{
+  font-size: 40px;
+  font-weight: 1000px;
+}
+.select{
+  width: 15%;
+  background-color: #4caf50;
+}
+.search{
+  width: 100%;
+  background-color:#5c5757;
+}
+.submit{
+  background-color: #222;
+}
+.update-form {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.update-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.update-form input {
+  display: block;
+  margin-bottom: 20px;
+  padding: 5px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: none;
+  background-color: #555;
+  color: white;
+}
+
+.update-form input[type="submit"] {
+  background-color: #ff5722;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.update-form input[type="submit"]:hover {
+  background-color: #f44336;
+}
+.disabled {
+  opacity: 0.2;
+  pointer-events: none;
+  background-color: #f44336;
+}
+.comment {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #222;
+  color: #fff;
+  padding: 20px;
+}
+
+.comment label,
+.comment input {
+  margin-bottom: 10px;
+}
+
+/* Using media queries to adjust the layout and styling of the form based on the screen size */
+@media (max-width: 768px) {
+  .comment {
+    flex-direction: column;
+  }
+
+  .comment label,
+  .comment input {
+    width: 100%;
+  }
+}
+.update-container {
+  background-color: #494545;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 20px;
+  background-color: #fff;
+  color: black;
+}
+
+button[type="submit"] {
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #b5070f;
+}
+
+@media (max-width: 600px) {
+  input[type="text"] {
+    font-size: 14px;
+  }
+
+  button[type="submit"] {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+
