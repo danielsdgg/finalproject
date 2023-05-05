@@ -1,6 +1,7 @@
 import React,{useState} from "react"
 import './App.css';
 function AddAnimal({animals,setAnimals}){
+
   // set initial state for form data using the useState hook
   const [formData,setFormData]=useState({
     name:"",
@@ -61,7 +62,7 @@ fetch("http://localhost:3000/animals",{
   return(
 
   // display the form with input fields and a submit button
-    <div className="add-animal">
+    <div className="add-animal" onClick={handleSubmit}>
 <form className="animal-form">
   <h5>ADD-ANIMAL-HERE</h5>
   <br/>
@@ -89,7 +90,7 @@ fetch("http://localhost:3000/animals",{
   <input type="text" id="AvailabilityStatus" value={formData.AvailabilityStatus} onChange={(e)=>setFormData({...formData,AvailabilityStatus:e.target.value})}/>
   <label type="text">image-url:</label>
   <input type="img" id="image" value={formData.image} onChange={(e)=>setFormData({...formData,image:e.target.value})}/>
-  <button type="submit" onClick={handleSubmit}>ADD-ANIMAL</button>
+  <button type="submit">ADD-ANIMAL</button>
 </form>
     </div>
   )

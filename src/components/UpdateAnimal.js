@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { useParams,useNavigate } from "react-router-dom";
 
-function UpdateAnimal({updateAnimal}){
+function UpdateAnimal(updateAnimal){
   //declare param functions
-  const params=useParams()
+  // const params=useParams()
   const {id}=useParams()
   //declare navigation function
   const navigate=useNavigate()
@@ -47,7 +47,7 @@ function UpdateAnimal({updateAnimal}){
       body: JSON.stringify(updateanimal),
     })
       .then((response) => response.json())
-      .then((data) => updateanimal(data))
+      .then((data) => updateAnimal(data))
 
       //clearing input fields
       setInputClear()
@@ -96,7 +96,7 @@ function UpdateAnimal({updateAnimal}){
           <input type="text" id="healthstatus" value={healthStatus} placeholder="Enter Breed" onChange={e => setHealthStatus(e.target.value)}/>
 
           <label for="image">Image Url</label>
-          <input type={<img/>} id="image" value={image} placeholder="Enter Image URL" onChange={e => setImage(e.target.value)}/>
+          <input type={<img/>} id="image" value={image} alt="images" placeholder="Enter Image URL" onChange={e => setImage(e.target.value)}/>
 
        <button className="submit" type="submit">ENTER</button>
       </form>

@@ -41,7 +41,9 @@
       "AvailabilityStatus": "not available already bought",
       "image": "https://m.media-amazon.com/images/I/71kNvlpS9GL._SY355_.jpg",
       "id": 4,
-      "likes": 5
+      "likes": 5,
+      "liked": false,
+      "disabled": true
     },
     {
       "id": 5,
@@ -100,20 +102,6 @@
       "likes": 4
     },
     {
-      "id": 9,
-      "name": "Cleo",
-      "breed": "Rabbit",
-      "age": "10 years",
-      "gender": "Female",
-      "size": "Medium",
-      "weight": "10 lbs",
-      "personality": "Energetic and vocal",
-      "healthStatus": "Up to date on shots, healthy",
-      "AvailabilityStatus": "Available",
-      "image": "https://www.cuded.com/wp-content/uploads/2013/06/45-Bunny-Picture.jpg",
-      "likes": 0
-    },
-    {
       "id": 10,
       "name": "Tucker",
       "breed": "Horse",
@@ -168,20 +156,6 @@
       "AvailabilityStatus": "Available",
       "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRotWeinI62zZjXQRSFa0cV4Icf0Q8xcwQgsCODFtLosZlqxRx2If0Jtt6jVtPkVemoMFc&usqp=CAU",
       "likes": 3
-    },
-    {
-      "id": 14,
-      "name": "Hopper",
-      "breed": "Panda",
-      "age": "1 year",
-      "gender": "Male",
-      "size": "Small",
-      "weight": "20kg",
-      "personality": "Active and Vocal",
-      "healthStatus": "Healthy",
-      "AvailabilityStatus": "Available",
-      "image": "https://cdn.arstechnica.net/wp-content/uploads/2023/04/GettyImages-1242262709-scaled.jpeg",
-      "likes": 6
     },
     {
       "id": 15,
@@ -280,6 +254,19 @@
       "AvailabilityStatus": "Available",
       "image": "https://media-cldnry.s-nbcnews.com/image/upload/t_social_share_1200x630_center,f_auto,q_auto:best/newscms/2019_03/1403289/boo-worlds-cutest-dog-today-190119-main-01.jpg",
       "likes": 2
+    },
+    {
+      "name": "dan",
+      "breed": "wolf",
+      "age": "3",
+      "gender": "male",
+      "size": "2",
+      "weight": "2lbs",
+      "personality": "angry",
+      "healthStatus": "healthy",
+      "AvailabilityStatus": "available",
+      "image": "https://cdn.britannica.com/07/5207-050-5BC9F251/Gray-wolf.jpg",
+      "id": 21
     }
   ],
   "messages": [
@@ -294,6 +281,12 @@
       "email": "daniel.muiruri@student.moringaschool.com",
       "message": "gyuhgj",
       "id": 2
+    },
+    {
+      "name": "Daniel",
+      "email": "daniel.muiruri@student.moringaschool.com",
+      "message": "Very Good..!",
+      "id": 3
     }
   ]
 }

@@ -1,22 +1,17 @@
-import React, {useState} from "react";
-import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import React from "react";
+import { Link } from "react-router-dom";
 
 function Header(){
-   
-    }
+    
     //displaying the header
     return(
-        <div class="topnav">
-            {/* creating the navigation links */}
+        <div class="navs">
             <Link className="nav-link" to='/'>Home</Link>
-            <Link className="nav-link" to='/addbook'>Add Book</Link>
-            <Link className="nav-link" to='/contact us'>Contact Us</Link>
-            {/* creating button that will sort the books by category */}
-            <button className="buttonTitle" onClick={sortByTitle} style={{float: 'right'}}><i class="fa fa-sort"></i></button>
-            <div class="topnav-right">            
-            </div>  
+            <Link className="nav-link" to='/add-animal'>Add animal</Link>
+            <Link className="nav-link" to='/contacts'>Contacts</Link>
+            <Link className="nav-link" to='/about'>About Us</Link> 
         </div>
     )
+}
 
-
-export default Header
+export default Header;
